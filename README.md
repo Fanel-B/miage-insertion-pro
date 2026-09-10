@@ -64,8 +64,8 @@ devant le diplôme générique "Informatique".
 
 ## Conclusion
 
-Choisir la MIAGE, c'est choisir une filière du secteur informatique — déjà
-favorisé en France — qui performe mieux que la moyenne des diplômes
+Choisir la MIAGE, c'est choisir une filière du secteur informatique déjà
+favorisé en France qui performe mieux que la moyenne des diplômes
 d'informatique eux-mêmes. Le choix de la ville influe surtout sur le
 salaire, moins sur les chances d'obtenir un emploi.
 
