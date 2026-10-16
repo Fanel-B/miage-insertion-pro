@@ -1,6 +1,6 @@
 # Insertion professionnelle des diplômés MIAGE en France
 
-Étudiant en L3 MIASHS (Réseau MIAGE) à l'Université Toulouse III Paul Sabatier,
+Étudiant en L3 MIAGE (Réseau MIAGE) à l'Université Toulouse III Paul Sabatier,
 je me suis demandé si mon choix de filière et de ville était pertinent en
 termes de débouchés professionnels. Ce projet répond à trois questions à
 partir des données officielles du ministère de l'Enseignement supérieur.
@@ -17,7 +17,14 @@ partir des données officielles du ministère de l'Enseignement supérieur.
 ## Source des données
 
 [Insertion professionnelle des diplômés](https://data.esr.gouv.fr) —
-data.esr.gouv.fr. ~1 million de lignes, données 2019-2024, niveau Master.
+data.esr.gouv.fr (jeu `fr-esr-insersup`). ~1 million de lignes, données
+2019-2024.
+
+**Toutes les analyses portent sur des diplômés de niveau Master.** L'enquête
+ne couvre pas la licence : les taux d'emploi et les salaires présentés ici
+décrivent donc le débouché de la filière à son terme, pas celui d'un L3. C'est
+précisément ce qui m'intéressait, puisque la question était de savoir où mène
+la MIAGE.
 
 ## Méthodologie
 
@@ -76,6 +83,15 @@ pip install -r requirements.txt
 python exploration.py
 ```
 
-Le fichier de données (`fr-esr-insersup.csv`) doit être placé à la racine
-du projet. Il est disponible sur
-[data.esr.gouv.fr](https://data.esr.gouv.fr).
+Le fichier de données (`fr-esr-insersup.csv`) n'est pas versionné : il pèse
+trop lourd pour le dépôt. Il faut le télécharger puis le placer à la racine
+du projet.
+
+1. Ouvrir la page du jeu de données :
+   [fr-esr-insersup sur data.esr.gouv.fr](https://data.enseignementsup-recherche.gouv.fr/explore/dataset/fr-esr-insersup/)
+2. Onglet **Export**, puis **CSV** — ou directement
+   [ce lien de téléchargement](https://data.enseignementsup-recherche.gouv.fr/explore/dataset/fr-esr-insersup/download/?format=csv&use_labels_for_header=true).
+3. Renommer le fichier en `fr-esr-insersup.csv` et le déposer à la racine.
+
+Le jeu est mis à jour deux fois par an : les chiffres obtenus peuvent donc
+différer légèrement de ceux commentés ci-dessus.
